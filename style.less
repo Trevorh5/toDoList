@@ -1,0 +1,82 @@
+
+body, html{
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body{
+  background: linear-gradient(45deg, rgba(119,81,254,1) 0%,rgba(0,169,255,1) 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 80%;
+  height: 90%;
+  background-color: ghostwhite;
+  border-radius: 4px;
+
+  .headbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 50px;
+
+    .left {
+      margin: 8px;
+    }
+    .addList {
+      margin: 8px;
+    }
+  }
+  .main{
+    width: 85%;
+    height: auto;
+    margin: 25px auto;
+    display: flex;
+    justify-content: left;
+
+    .overList{
+      height: 100%;
+      width: 85%;
+
+      .listHead {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        list-style-type: none;
+        background-color: #FFFFFF;
+        border: 1px solid gainsboro;
+
+        .listIcons {
+          width: 45px;
+          display: flex;
+          justify-content: space-between;
+
+        }
+      }
+        .listItem {
+          border: 1px solid gainsboro;
+          display: flex;
+          justify-content: space-between;
+
+          .checkedCheck{
+            color: green;
+            opacity: 1;
+          }
+        }
+
+        .complete {
+          background-color: lightslategrey;
+          opacity: .5;
+
+        }
+
+
+    }
+  }
+}
+

@@ -1,0 +1,69 @@
+body,
+html {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+body {
+  background: linear-gradient(45deg, #7751fe 0%, #00a9ff 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 80%;
+  height: 90%;
+  background-color: ghostwhite;
+  border-radius: 4px;
+}
+.container .headbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #FFFFFF;
+  width: 100%;
+  height: 50px;
+}
+.container .headbar .left {
+  margin: 8px;
+}
+.container .headbar .addList {
+  margin: 8px;
+}
+.container .main {
+  width: 85%;
+  height: auto;
+  margin: 25px auto;
+  display: flex;
+  justify-content: left;
+}
+.container .main .overList {
+  height: 100%;
+  width: 85%;
+}
+.container .main .overList .listHead {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  list-style-type: none;
+  background-color: #FFFFFF;
+  border: 1px solid gainsboro;
+}
+.container .main .overList .listHead .listIcons {
+  width: 45px;
+  display: flex;
+  justify-content: space-between;
+}
+.container .main .overList .listItem {
+  border: 1px solid gainsboro;
+  display: flex;
+  justify-content: space-between;
+}
+.container .main .overList .listItem .checkedCheck {
+  color: green;
+  opacity: 1;
+}
+.container .main .overList .complete {
+  background-color: lightslategrey;
+  opacity: .5;
+}
