@@ -1,6 +1,28 @@
 
-function newList(){
+
+$('#listName').keypress(function( event ) {
     var listTitle = $('#listName').val();
+
+    if (event.which == 13) {
+        $('.overList').append('<div class="list">' +
+            '<div class="listHead">' +
+            '<div class="titleSpot">' + listTitle +
+            '<input type="text" id="newItem" placeholder="New list item"/>' +
+            '</div>' +
+
+            '<div class="listIcons">' +
+            '<span class="fas fa-plus" onclick="newItem(this)"></span>' +
+            '<span class="fas fa-trash" onclick="deleteItem(this)"></span>' +
+            '</div>' +
+            '</div>' +
+            '</div>'
+        )
+    }
+});
+function newList(){
+
+    var listTitle = $('#listName').val();
+
     $('.overList').append('<div class="list">' +
         '<div class="listHead">' +
         '<div class="titleSpot">' + listTitle +
